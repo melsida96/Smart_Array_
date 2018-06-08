@@ -79,7 +79,7 @@ void Smart_array::quick_sort(int left, int right)
 
 Smart_array& Smart_array:: operator = (const Smart_array& other) 
 {
-	if ( this != other ) {
+	if ( this != &other ) {
 		if ( other.m_size != m_size ) {
 			delete [] m_array;
 			m_size = other.m_size;
